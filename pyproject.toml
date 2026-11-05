@@ -5,7 +5,7 @@ description = "The visual and compatibility reference for Druks UI."
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.11"
-dependencies = ["druks>=0.8.0"]
+dependencies = ["druks>=0.12.0"]
 
 # Installing the distribution is the whole registration: Druks reads this at
 # boot and mounts the app.
@@ -33,3 +33,6 @@ known-first-party = ["druks_ui_gallery"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 asyncio_mode = "auto"
+
+[tool.uv.sources]
+druks = { git = "https://github.com/czpython/druks", branch = "main" }
